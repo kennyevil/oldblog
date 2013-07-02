@@ -1,0 +1,1 @@
+Personal blogsite to get to grips with Rails 4, Mongodb and Mongoid 3.0.0

@@ -19,6 +19,9 @@ gem 'turbolinks'
 
 gem 'jbuilder', '~> 1.2'
 
+gem 'devise', git: 'https://github.com/plataformatec/devise.git'
+gem 'devise-encryptable', git: 'https://github.com/plataformatec/devise-encryptable.git'
+
 group :doc do
   gem 'sdoc', require: false
 end

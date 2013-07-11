@@ -1,5 +1,3 @@
-<h1>Listing posts</h1>
-
 <table>
   <thead>
     <tr>
@@ -15,7 +13,7 @@
     <% @posts.each do |post| %>
       <tr>
         <td><%= post.title %></td>
-        <td><%= post.published %></td>
+        <td><%= post.created_at %></td>
         <td><%= post.by %></td>
         <td><%= post.comments.size %></td>
         <td><%= link_to 'Show', post %></td>

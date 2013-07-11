@@ -1,14 +1,16 @@
 class Post
   include Mongoid::Document
+  include Mongoid::Timestamps
 
   field :title
-  field :published, type: DateTime, :default => Proc.new {  DateTime.now }
   field :by
   field :body
+  field :created_at, type: DateTime
+  field :_id, type: String, default: ->{ title.to_s.parameterize }
 
-  index({published:1})
+  index({created_at:1})
 
-  default_scope order_by(:published => :desc)
+  default_scope order_by(:created_at => :desc)
 
   embeds_many :comments
 end

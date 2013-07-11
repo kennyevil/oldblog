@@ -6,9 +6,7 @@
       <th>Title</th>
       <th>Published</th>
       <th>By</th>
-      <th>Body</th>
-      <th></th>
-      <th></th>
+      <th>Comments</th>
       <th></th>
     </tr>
   </thead>
@@ -19,10 +17,8 @@
         <td><%= post.title %></td>
         <td><%= post.published %></td>
         <td><%= post.by %></td>
-        <td><%= post.body %></td>
+        <td><%= post.comments.size %></td>
         <td><%= link_to 'Show', post %></td>
-        <td><%= link_to 'Edit', edit_post_path(post) %></td>
-        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>

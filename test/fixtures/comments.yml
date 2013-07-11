@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  by: MyString
+  pulished_on: 
+  body: MyString
+
+two:
+  by: MyString
+  pulished_on: 
+  body: MyString

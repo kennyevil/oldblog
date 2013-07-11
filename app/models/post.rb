@@ -9,5 +9,7 @@ class Post
   index({published:1})
 
   default_scope order_by(:published => :desc)
+
+  embeds_many :comments
 end
 

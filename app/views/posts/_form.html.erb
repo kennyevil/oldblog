@@ -19,9 +19,7 @@
     </div>
   </div>
   <div class="row">
-    <div class="large-4 columns">
-      <%= f.text_field :by %>
-    </div>
+    <%= f.hidden_field :by, :value => current_user.username %>
   </div>
   <div class="row">
     <div class="large-12 columns">

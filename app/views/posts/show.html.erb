@@ -29,9 +29,7 @@
       <fieldset>
       	<legend>New Comment</legend>
 	  <%= form_for [@post, Comment.new] do |f| %>
-	  <div class="row">
-  	    <div class="large-4 columns"><%= f.text_field :by %></div>
-	  </div>
+  	    <%= f.hidden_field :by, :value => current_user.username %>
 
 	  <div class="row">
  	    <div class="large-12 columns"><%= f.text_area :body, :rows => 30 %></div>

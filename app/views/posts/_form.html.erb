@@ -1,4 +1,6 @@
 <%= form_for(@post) do |f| %>
+  <fieldset>
+    <legend>New post</legend>
   <% if @post.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@post.errors.count, "error") %> prohibited this post from being saved:</h2>
@@ -11,19 +13,23 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :title %><br>
-    <%= f.text_field :title %>
+  <div class="row">
+    <div class="large-4 columns">
+      <%= f.text_field :title %>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :by %><br>
-    <%= f.text_field :by %>
+  <div class="row">
+    <div class="large-4 columns">
+      <%= f.text_field :by %>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :body %><br>
-    <%= f.text_area :body %>
+  <div class="row">
+    <div class="large-12 columns">
+      <%= f.text_area :body, :rows => 20 %>
+    </div>
   </div>
-  <div class="actions">
+  <div class="large button">
     <%= f.submit %>
   </div>
+  </fieldset>
 <% end %>

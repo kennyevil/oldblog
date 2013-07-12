@@ -13,7 +13,7 @@
   	<!-- Set the viewport width to device width for mobile -->
   	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  	<title><%= content_for?(:title) ? yield(:title) : "Untitled" %></title>
+  	<title><%= content_for?(:title) ? yield(:title) : "Angry Dome" %></title>
 
   	<%= stylesheet_link_tag    "application" %>
   	<%= javascript_include_tag "vendor/custom.modernizr" %>
@@ -26,10 +26,19 @@
     <% flash.each do |name, msg| %>
       <%= content_tag :div, msg, id: "flash_#{name}" %>
     <% end %>
-    <%= yield %>
+    <div class="row">
+      <div class="large-9 large columns">
+        <%= yield %>
+      </div>
+      <div class="small-3 small columns">
+     	<%= render "layouts/links" %>
+      </div>
+    </div>
 
     
     <%= javascript_include_tag "application" %>
+    <hr>
+    <%= render "layouts/footer" %>
     </div>
   </body>
 </html>

@@ -13,5 +13,6 @@ class Post
   default_scope order_by(:created_at => :desc)
 
   embeds_many :comments
+
 end
 

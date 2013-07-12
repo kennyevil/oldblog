@@ -10,6 +10,7 @@ class User
   
   field :username,	     :type => String
   field :name,		     :type => String
+  field :admin,		     :type => Boolean, :default => false
 
   ## Database authenticatable
   field :email,              :type => String, :default => ""

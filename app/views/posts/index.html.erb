@@ -1,27 +1,17 @@
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Published</th>
-      <th>By</th>
-      <th>Comments</th>
-      <th></th>
-    </tr>
-  </thead>
+<% if current_user.try(:admin?) %>
+  <%= link_to 'New Post', new_post_path %>
+<% end %>
 
-  <tbody>
-    <% @posts.each do |post| %>
-      <tr>
-        <td><%= post.title %></td>
-        <td><%= post.created_at %></td>
-        <td><%= post.by %></td>
-        <td><%= post.comments.size %></td>
-        <td><%= link_to 'Show', post %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+<% @posts.each do |post| %>
+  <article id="test">
+    <h2><%= post.title %></h2>
+    <h4> by <%= post.by %> on <%=post.created_at %></h4>
+    <p><%= post.body %></p>
+    <h6><%= link_to "#{post.comments.size} comments", post %></h6>
+    <hr>
+  </article>
+<% end %>
 
-<br>
+<%= will_paginate @posts %>
 
-<%= link_to 'New Post', new_post_path %>
+

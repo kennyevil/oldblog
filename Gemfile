@@ -2,7 +2,9 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.0.0'
 
-gem 'zurb-foundation'
+gem 'zurb-foundation', git: 'https://github.com/zurb/foundation.git'
+gem 'foundation_rails_helper', git: 'https://github.com/sgruhier/foundation_rails_helper.git'
+gem 'compass'
 
 gem 'mongoid', git: 'https://github.com/mongoid/mongoid.git' 
 gem 'bson_ext'
@@ -16,6 +18,8 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 
 gem 'turbolinks'
+
+gem 'will_paginate_mongoid'
 
 gem 'jbuilder', '~> 1.2'
 

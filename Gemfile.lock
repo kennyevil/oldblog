@@ -35,7 +35,7 @@ GIT
 
 GIT
   remote: https://github.com/zurb/foundation.git
-  revision: d1c61b900176085b1b53e2476c62d2d8bcf6e034
+  revision: a06390f7b8d09447e04204151e970e8e72d8e90c
   specs:
     zurb-foundation (4.2.3)
       sass (>= 3.2.0)

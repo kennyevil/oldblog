@@ -23,6 +23,8 @@
   <body>
     <%= render "layouts/nav" %>
 
+    <p id="notice"><%= notice %></p>
+
     <% flash.each do |name, msg| %>
       <%= content_tag :div, msg, id: "flash_#{name}" %>
     <% end %>
@@ -40,5 +42,6 @@
     <hr>
     <%= render "layouts/footer" %>
     </div>
+    <%= tinymce %>
   </body>
 </html>

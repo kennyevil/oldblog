@@ -1,5 +1,5 @@
 <p id="notice"><%= notice %></p>
-  <article>
+  <article class="post">
     <h2>
       <%= @post.title %>
     </h2>
@@ -9,11 +9,12 @@
     </h4>
 
     <section>
-      <%= @post.body %>
+      <%= raw(@post.body) %>
     </section>
     <% if current_user.try(:admin?) %>
       <%= link_to 'Edit', edit_post_path(@post) %> 
     <% end %>
+    <hr>
   </article>
 
     <% if @post.comments.size > 0 %>
@@ -21,7 +22,7 @@
       <% for comment in @post.comments %>
         <h5><%= comment.by %></h5>
         <h6>on <%= comment.published_on %></h6>
-        <section><%= comment.body %></section>
+        <section><%= raw(comment.body) %></section>
 	<hr>
       <% end %>
     <% end %>
@@ -31,13 +32,13 @@
 	  <%= form_for [@post, Comment.new] do |f| %>
   	    <%= f.hidden_field :by, :value => current_user.username %>
 
-	  <div class="row">
- 	    <div class="large-12 columns"><%= f.text_area :body, :rows => 30 %></div>
-	  </div>
+	    <div class="row">
+ 	      <div class="large-12 columns"><%= f.text_area :body, :class => "tinymce", :rows => "40" %></div>
+	    </div>
 
-    	<div class="tiny button"><%= f.submit %></div>
+    	    <%= f.submit %>
+         <% end %>
       </fieldset>
-       <% end %>
     <% else %>
       <p>Commenters must be <%= link_to 'logged in', new_user_session_path %> to leave comments.</p>
       <p><%= link_to 'Registration', new_user_registration_path %> for new commenters</p>

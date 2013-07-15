@@ -3,12 +3,18 @@
 <% end %>
 
 <% @posts.each do |post| %>
-  <article id="test">
-    <h2><%= post.title %></h2>
-    <h4> by <%= post.by %> on <%=post.created_at %></h4>
-    <p><%= post.body %></p>
-    <h6><%= link_to "#{post.comments.size} comments", post %></h6>
-    <hr>
+  <article class="post">
+    <div class="row">
+      <div class="small-12 small-centered columns">	
+	<h2><%= post.title %></h2>
+	<h4> by <%= post.by %> on <%=post.created_at %></h4>
+ 	  <div class="small-10 small-centered columns">
+	    <%= raw(post.body) %>
+	  </div>
+        <h6><%= link_to "#{post.comments.size} comments", post %></h6>
+	<hr>
+      </div>
+    </div>
   </article>
 <% end %>
 

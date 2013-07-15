@@ -29,6 +29,8 @@ gem 'devise-encryptable', git: 'https://github.com/plataformatec/devise-encrypta
 
 gem 'rails_12factor'
 
+gem 'tinymce-rails', git: 'https://github.com/spohlenz/tinymce-rails'
+
 group :doc do
   gem 'sdoc', require: false
 end

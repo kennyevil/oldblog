@@ -27,6 +27,8 @@ gem 'jbuilder', '~> 1.2'
 gem 'devise', git: 'https://github.com/plataformatec/devise.git'
 gem 'devise-encryptable', git: 'https://github.com/plataformatec/devise-encryptable.git'
 
+gem 'rails_12factor'
+
 group :doc do
   gem 'sdoc', require: false
 end

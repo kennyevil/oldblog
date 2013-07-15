@@ -3,7 +3,7 @@ ruby '2.0.0'
 
 gem 'rails', '4.0.0'
 
-gem 'zurb-foundation', git: 'https://github.com/zurb/foundation.git'
+gem 'zurb-foundation', '4.2.3' 
 gem 'foundation_rails_helper', git: 'https://github.com/sgruhier/foundation_rails_helper.git'
 gem 'compass'
 

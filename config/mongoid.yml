@@ -78,7 +78,7 @@ test:
 production:
   sessions:
     default:
-      uri: mongodb://cjgannon:!Moret1m3@dharma.mongohq.com:10034/cjgannon 
+      uri: <%= ENV['MONGOHQ_URI'] %> 
       options:
         skip_version_check: true
         safe: true

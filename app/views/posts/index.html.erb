@@ -9,9 +9,9 @@
 	<h2><%= post.title %></h2>
 	<h4> by <%= post.by %> on <%=post.created_at %></h4>
  	  <div class="small-10 small-centered columns">
-	    <%= raw(post.body) %>
+	    <%= markdown(post.body).html_safe %>
 	  </div>
-        <h6><%= link_to "#{post.comments.size} comments", post %></h6>
+        <h6><%= link_to pluralize(post.comments.size, "comment"), post %></h6>
 	<hr>
       </div>
     </div>

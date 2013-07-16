@@ -1,1 +1,5 @@
-Personal blogsite to get to grips with Rails 4, Mongodb and Mongoid 3.0.0
+This is the repository for my personal blogsite which is hosted at http://angrydome.herokuapp.com
+
+The site was built using Rails 4.0.0, Mongoid 3.0.0rc, Foundation 4.2.3 and the database is hosted at MongoHQ.com
+
+Contact email: cjgannon@gmail.com

@@ -20,10 +20,11 @@
   </div>
   <div class="row">
     <%= f.hidden_field :by, :value => current_user.username %>
+    <%= f.hidden_field :email, :value => current_user.email %>
   </div>
   <div class="row">
     <div class="large-12 columns">
-      <%= f.text_area :body, :class => "tinymce", :rows => 40 %>
+      <%= f.text_area :body %>
     </div>
   </div>
     <%= f.submit %>

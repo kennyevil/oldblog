@@ -4,11 +4,11 @@
     </h2>
 
     <h4>
-      Posted on <%= @post.created_at %> by <%= @post.by %>
+      Posted on <%= @post.created_at %> by <%= @post.by %> <%= post_gravatar @post %>
     </h4>
 
     <section>
-      <%= raw(@post.body) %>
+      <%= markdown(@post.body).html_safe %>
     </section>
     <% if current_user.try(:admin?) %>
       <%= link_to 'Edit', edit_post_path(@post) %> 
@@ -21,7 +21,7 @@
       <% for comment in @post.comments %>
         <h5><%= comment.by %></h5>
         <h6>on <%= comment.published_on %></h6>
-        <section><%= raw(comment.body) %></section>
+        <section><%= markdown(comment.body).html_safe %></section>
 	<hr>
       <% end %>
     <% end %>
@@ -32,7 +32,7 @@
   	    <%= f.hidden_field :by, :value => current_user.username %>
 
 	    <div class="row">
- 	      <div class="large-12 columns"><%= f.text_area :body, :class => "tinymce", :rows => "40" %></div>
+ 	      <div class="large-12 columns"><%= f.text_area :body %></div>
 	    </div>
 
     	    <%= f.submit %>

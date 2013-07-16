@@ -1,9 +1,11 @@
 class Post
+
   include Mongoid::Document
   include Mongoid::Timestamps
 
   field :title
   field :by
+  field :email
   field :body
   field :created_at, type: DateTime
   field :_id, type: String, default: ->{ title.to_s.parameterize }

@@ -15,7 +15,6 @@
 //= require foundation
 //= require turbolinks
 //= require_tree .
-//= require tinymce-jquery
 //= require foundation
 
 $(function(){ $(document).foundation(); });

@@ -3,6 +3,8 @@ ruby '2.0.0'
 
 gem 'rails', '4.0.0'
 
+gem 'google-analytics-rails'
+
 gem 'zurb-foundation', '4.2.3' 
 gem 'foundation_rails_helper', git: 'https://github.com/sgruhier/foundation_rails_helper.git'
 gem 'compass'
@@ -27,9 +29,9 @@ gem 'jbuilder', '~> 1.2'
 gem 'devise', git: 'https://github.com/plataformatec/devise.git'
 gem 'devise-encryptable', git: 'https://github.com/plataformatec/devise-encryptable.git'
 
-gem 'rails_12factor'
+gem 'redcarpet'
 
-gem 'tinymce-rails', git: 'https://github.com/spohlenz/tinymce-rails'
+gem 'rails_12factor' #Required to make Rails4 apps work on heroku
 
 group :doc do
   gem 'sdoc', require: false

@@ -5,12 +5,22 @@
 <% @posts.each do |post| %>
   <article class="post">
     <div class="row">
-      <div class="small-12 small-centered columns">	
-	<h2><%= post.title %></h2>
-	<h4>Posted <%= time_ago_in_words(post.created_at) %> by <%= post.by %></h4>
- 	  <div class="small-10 small-centered columns">
-	    <%= markdown(post.body).html_safe %>
-	  </div>
+      <div class="small-10 small-centered columns">	
+	<h2 class=><%= post.title %></h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="small-5 small-offset-7 columns">
+	<h4 class="subheader">Posted <%= time_ago_in_words(post.created_at) %> ago by <%= post.by %></h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="small-10 small-centered columns">
+	<%= markdown(post.body).html_safe %>
+      </div>
+    </div>
+    <div class="row">
+      <div class="small-4 small-offset-8 columns">
         <h6><%= link_to pluralize(post.comments.size, "comment"), post %></h6>
 	<hr>
       </div>

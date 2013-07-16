@@ -1,15 +1,23 @@
   <article class="post">
-    <h2>
-      <%= @post.title %>
-    </h2>
+    <div class="row">
+      <div class="small-11 small-centered columns">
+    	  <h2><%= @post.title %></h2>
+      </div>
+    </div>
+	
+    <div class="row">
+      <div class="small-4 small-offset-8 columns">
+        <h6 class="subheader" >
+          <%= post_gravatar @post %><br />Posted <%= time_ago_in_words(@post.created_at) %> by <%= link_to @post.by, :email => @post.email %>
+        </h6>
+      </div>
+    </div>
 
-    <h4>
-      Posted on <%= @post.created_at %> by <%= @post.by %> <%= post_gravatar @post %>
-    </h4>
-
-    <section>
-      <%= markdown(@post.body).html_safe %>
-    </section>
+    <div class="row">
+      <div class="small-10 small-centered columns">
+	<%= markdown(@post.body).html_safe %>
+      </div>
+    </div>
     <% if current_user.try(:admin?) %>
       <%= link_to 'Edit', edit_post_path(@post) %> 
     <% end %>
@@ -17,13 +25,22 @@
   </article>
 
     <% if @post.comments.size > 0 %>
-    <h4>Comments</h4>
-      <% for comment in @post.comments %>
-        <h5><%= comment.by %></h5>
-        <h6>on <%= comment.published_on %></h6>
-        <section><%= markdown(comment.body).html_safe %></section>
-	<hr>
-      <% end %>
+      <div class="row">
+	<div class="small-10 small-centered columns">
+	  <h4 class="subheader">Comments</h4>
+      	  <% for comment in @post.comments %>
+	    <article class="comment">
+	      <div class="row">
+	        <div class="small-11 small-centered columns">
+		    <section><p><%= markdown(comment.body).html_safe %></p>
+              	    <h6 class="subheader">Posted <%= time_ago_in_words(comment.published_on) %> by <%= comment.by %> </h6>
+		    </section>
+	        </div>
+    	      </div>
+	    </article>
+      	  <% end %>
+	</div>
+      </div>
     <% end %>
     <% if user_signed_in? %>
       <fieldset>
@@ -32,7 +49,10 @@
   	    <%= f.hidden_field :by, :value => current_user.username %>
 
 	    <div class="row">
- 	      <div class="large-12 columns"><%= f.text_area :body %></div>
+ 	      <div class="small-10 small-centered columns">
+		<h6>Use Markdown for formatting</h6>
+		<%= f.text_area :body %>
+	       </div>
 	    </div>
 
     	    <%= f.submit %>

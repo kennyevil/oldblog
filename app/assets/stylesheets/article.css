@@ -1,4 +1,10 @@
 .post {
-  background-color: #fff;
+  background-color: #fffff0;
   border-radius: 7px;
+}
+
+.comment {
+  background-color: #ccccff;
+  border-radius: 2px/4px;
+  
 }

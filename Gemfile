@@ -8,6 +8,7 @@ gem 'google-analytics-rails'
 gem 'zurb-foundation', '4.2.3' 
 gem 'foundation_rails_helper', git: 'https://github.com/sgruhier/foundation_rails_helper.git'
 gem 'compass'
+gem 'foundation-icons-sass-rails'
 
 gem 'mongoid', git: 'https://github.com/mongoid/mongoid.git' 
 gem 'bson_ext'

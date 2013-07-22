@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/mongoid/mongoid.git
-  revision: cb541fa1fd7cf9ab0a725c757490d0ac435a79f7
+  revision: 5d8397e24b673724f4b70ca2923a62bfe20e6e79
   specs:
     mongoid (4.0.0)
       activemodel (~> 4.0.0)
@@ -82,6 +82,9 @@ GEM
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    foundation-icons-sass-rails (2.0.0)
+      railties (>= 3.1.1)
+      sass-rails (>= 3.1.1)
     fssm (0.2.10)
     google-analytics-rails (0.0.4)
     hike (1.2.3)
@@ -176,6 +179,7 @@ DEPENDENCIES
   compass
   devise!
   devise-encryptable!
+  foundation-icons-sass-rails
   foundation_rails_helper!
   google-analytics-rails
   jbuilder (~> 1.2)

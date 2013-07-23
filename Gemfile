@@ -30,6 +30,8 @@ gem 'jbuilder', '~> 1.2'
 gem 'devise', git: 'https://github.com/plataformatec/devise.git'
 gem 'devise-encryptable', git: 'https://github.com/plataformatec/devise-encryptable.git'
 
+gem 'pony'  #alternative to ActionMailer recommended by heroku
+
 gem 'redcarpet'
 
 gem 'rails_12factor' #Required to make Rails4 apps work on heroku

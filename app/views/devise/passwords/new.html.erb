@@ -1,12 +1,16 @@
-<fieldset>
-  <legend>Send password reset</legend>
-  <%= form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => { :method => :post }) do |f| %>
-    <%= devise_error_messages! %>
+<div class="row">
+  <div class="small-8 small-centered columns">
+      <fieldset>
+	<legend>Send password reset</legend>
+	<%= form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => { :method => :post }) do |f| %>
+	  <%= devise_error_messages! %>
+	  
+	  <%= f.email_field :email, :autofocus => true %>
 
-    <%= f.email_field :email, :autofocus => true %></div>
-
-  <%= f.submit %>
-<% end %>
-</fieldset>
+	  <%= f.submit %>
+	<% end %>
+      </fieldset>
+  </div>
+</div>
 
 <%= render "devise/shared/links" %>

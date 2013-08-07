@@ -1,6 +1,7 @@
 .post {
   background-color: #fffff0;
   border-radius: 5px/9px;
+  box-shadow: 0 0 6px 4px #888;
 }
 
 .comment {

@@ -2,7 +2,8 @@
 // Foundation Variables
 //
 
-@import url(http://fonts.googleapis.com/css?family=Roboto);
+@import url(http://fonts.googleapis.com/css?family=Patrick+Hand);
+@import url(http://fonts.googleapis.com/css?family=Acme);
 
 // The default font-size is set to 100% of the browser style sheet (usually 16px)
 // for compatibility with browser-based text zoom or user-set defaults.
@@ -32,7 +33,8 @@ $default-float: left;
 
 //$body-bg: #fff;
 // $body-font-color: #222;
-$body-font-family: "Roboto", "Helvetica", Helvetica, Arial, sans-serif;
+$body-font-family: 'Patrick Hand', cursive;
+//$body-font-family: Helvetica Neue, "Helvetica", Helvetica, Arial, sans-serif;
 // $body-font-weight: normal;
 // $body-font-style: normal;
 
@@ -139,7 +141,7 @@ $body-font-family: "Roboto", "Helvetica", Helvetica, Arial, sans-serif;
 
 // Heading font styles
 
-// $header-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$header-font-family: "Acme", sans-serif;
 // $header-font-weight: bold;
 // $header-font-style: normal;
 // $header-font-color: #222;

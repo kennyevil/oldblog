@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/mongoid/mongoid.git
-  revision: 5d8397e24b673724f4b70ca2923a62bfe20e6e79
+  revision: 85e146637503522939b3a6b942c84d1bbc55c00a
   specs:
     mongoid (4.0.0)
       activemodel (~> 4.0.0)
@@ -17,21 +17,23 @@ GIT
 
 GIT
   remote: https://github.com/plataformatec/devise.git
-  revision: b8ed2f31608eccb6df6d5bb2e66238d6dfc4bcfc
+  revision: d56641f514f54da04f778b2a9b816561df7910c2
   specs:
-    devise (3.0.0)
+    devise (3.0.1)
       bcrypt-ruby (~> 3.0)
       orm_adapter (~> 0.1)
       railties (>= 3.2.6, < 5)
+      thread_safe (~> 0.1)
       warden (~> 1.2.3)
 
 GIT
   remote: https://github.com/sgruhier/foundation_rails_helper.git
-  revision: ed5b290313edeb5343f214338f8bb822ffcefb52
+  revision: b7f70b461ff64379ac3fe5b71747bfc2440614e9
   specs:
-    foundation_rails_helper (0.3)
-      actionpack (>= 3.0)
-      railties (>= 3.0)
+    foundation_rails_helper (0.4)
+      actionpack (>= 4.0)
+      activemodel (>= 4.0)
+      railties (>= 4.0)
 
 GEM
   remote: https://rubygems.org/
@@ -61,7 +63,7 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 0.3.37)
     arel (4.0.0)
-    atomic (1.1.10)
+    atomic (1.1.12)
     bcrypt-ruby (3.1.1)
     bson (1.9.1)
     bson_ext (1.9.1)
@@ -89,7 +91,7 @@ GEM
     google-analytics-rails (0.0.4)
     hike (1.2.3)
     i18n (0.6.4)
-    jbuilder (1.4.2)
+    jbuilder (1.5.0)
       activesupport (>= 3.0.0)
       multi_json (>= 1.2.0)
     jquery-rails (3.0.4)
@@ -102,7 +104,8 @@ GEM
     mime-types (1.23)
     minitest (4.7.5)
     moped (1.5.0)
-    multi_json (1.7.7)
+    multi_json (1.7.8)
+    newrelic_rpm (3.6.6.147)
     origin (1.1.0)
     orm_adapter (0.4.0)
     polyglot (0.3.3)
@@ -133,7 +136,7 @@ GEM
     rdoc (3.12.2)
       json (~> 1.4)
     redcarpet (3.0.0)
-    sass (3.2.9)
+    sass (3.2.10)
     sass-rails (4.0.0)
       railties (>= 4.0.0.beta, < 5.0)
       sass (>= 3.1.10)
@@ -151,7 +154,7 @@ GEM
       activesupport (>= 3.0)
       sprockets (~> 2.8)
     thor (0.18.1)
-    thread_safe (0.1.0)
+    thread_safe (0.1.2)
       atomic
     tilt (1.4.1)
     treetop (1.4.14)
@@ -187,6 +190,7 @@ DEPENDENCIES
   jbuilder (~> 1.2)
   jquery-rails
   mongoid!
+  newrelic_rpm
   pony
   rails (= 4.0.0)
   rails_12factor

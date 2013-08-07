@@ -36,6 +36,8 @@ gem 'redcarpet'
 
 gem 'rails_12factor' #Required to make Rails4 apps work on heroku
 
+gem 'newrelic_rpm'
+
 group :doc do
   gem 'sdoc', require: false
 end

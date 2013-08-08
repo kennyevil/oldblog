@@ -17,7 +17,6 @@
   	<title><%= content_for?(:title) ? yield(:title) : "Angry Dome" %></title>
 
   	<%= stylesheet_link_tag    "application" %>
-  	<%= javascript_include_tag "vendor/custom.modernizr" %>
 	<%= analytics_init if Rails.env.production? %>
     <%= csrf_meta_tags %>
   </head>
@@ -41,6 +40,7 @@
     <%= javascript_include_tag "application" %>
     <hr>
     <%= render "layouts/footer" %>
+    <%= javascript_include_tag "vendor/custom.modernizr" %>
     </div>
   </body>
 </html>

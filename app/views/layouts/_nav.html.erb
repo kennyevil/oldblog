@@ -1,16 +1,16 @@
 <nav class="top-bar">
   <ul class="title-area">
     <li class="name"><%= link_to 'Angry Dome', root_path %></li>
-   <!-- <li class="toggle-topbar menu-icon">
+    <li class="toggle-topbar menu-icon">
       <a href="#">
 	<span>Menu</span>
       </a>
-    </li> -->
+    </li> 
   </ul>
 
   <section class="top-bar-section">
   <ul class="right">
-<!--    <li class="divider hide-for-small"></li> -->
+    <li class="divider hide-for-small"></li>
     <% if user_signed_in? %>
       <li><%= link_to 'Edit profile', edit_user_registration_path %></li> 
       <li class="divider"></li>

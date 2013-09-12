@@ -1,0 +1,18 @@
+.gravatar 
+  {
+  opacity: 0.6;
+
+  border-style: solid;
+  border-width: 2px;
+  border-color: #000000;
+  border-radius: 30px;
+
+  box-shadow: 0 4px 4px 0 #00002f;
+  
+  transition: opacity .2s ease-in-out;
+}
+
+.gravatar:hover
+  {
+  opacity: 1.0;
+  }

@@ -6,9 +6,9 @@
     </div>
 	
     <div class="row">
-      <div class="small-4 small-offset-8 columns">
+      <div class="small-6 small-offset-6 columns">
         <h6 class="subheader" >
-          <%= post_gravatar @post %><br />Posted <%= time_ago_in_words(@post.created_at) %> by <%= mail_to @post.email, "#{@post.by}", :subject => "Re: #{@post.title}" %>
+          Posted <%= time_ago_in_words(@post.created_at) %> by <%= mail_to @post.email, "#{@post.by}", :subject => "Re: #{@post.title}" %>  <%= post_gravatar @post %>
         </h6>
       </div>
     </div>

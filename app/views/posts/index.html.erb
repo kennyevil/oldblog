@@ -3,6 +3,7 @@
 <% end %>
 
 <% @posts.each do |post| %>
+  <hr>
   <article class="post">
     <div class="row">
       <div class="small-10 small-centered columns">	
@@ -25,9 +26,9 @@
       </div>
     </div>
   </article>
-  <hr>
 <% end %>
 
+<hr>
 <%= will_paginate @posts %>
 
 

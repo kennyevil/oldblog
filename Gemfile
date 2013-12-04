@@ -1,11 +1,11 @@
 source 'https://rubygems.org'
 ruby '2.0.0'
 
-gem 'rails', '4.0.0'
+gem 'rails', '4.0.2'
 
 gem 'google-analytics-rails'
 
-gem 'zurb-foundation', git: 'https://github.com/zurb/foundation.git' 
+gem 'foundation-rails', git: 'https://github.com/zurb/foundation-rails.git' 
 gem 'foundation_rails_helper', git: 'https://github.com/sgruhier/foundation_rails_helper.git'
 gem 'compass'
 gem 'foundation-icons-sass-rails'

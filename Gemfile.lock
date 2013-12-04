@@ -1,25 +1,25 @@
 GIT
   remote: https://github.com/mongoid/mongoid.git
-  revision: 85e146637503522939b3a6b942c84d1bbc55c00a
+  revision: f8b439dd9a59b769389aff81a42502cd857cf7fa
   specs:
-    mongoid (4.0.0)
+    mongoid (4.0.0.alpha1)
       activemodel (~> 4.0.0)
-      moped (~> 1.5)
+      moped (~> 2.0.beta4)
       origin (~> 1.0)
-      tzinfo (~> 0.3.22)
+      tzinfo (~> 0.3.37)
 
 GIT
   remote: https://github.com/plataformatec/devise-encryptable.git
-  revision: 4997273e8f9671c05ad621e9adc53393247f49c8
+  revision: 872286eb1324475c3f68ec7d824580c9a1d1e4c3
   specs:
     devise-encryptable (0.1.2)
       devise (>= 2.1.0)
 
 GIT
   remote: https://github.com/plataformatec/devise.git
-  revision: d56641f514f54da04f778b2a9b816561df7910c2
+  revision: 01f4a8f441a94c1450c156f7fa30ccd8ddc438db
   specs:
-    devise (3.0.1)
+    devise (3.2.2)
       bcrypt-ruby (~> 3.0)
       orm_adapter (~> 0.1)
       railties (>= 3.2.6, < 5)
@@ -28,7 +28,7 @@ GIT
 
 GIT
   remote: https://github.com/sgruhier/foundation_rails_helper.git
-  revision: b7f70b461ff64379ac3fe5b71747bfc2440614e9
+  revision: c78bf19613ea123ce07cf13ab4615d153d3e5891
   specs:
     foundation_rails_helper (0.4)
       actionpack (>= 4.0)
@@ -36,50 +36,50 @@ GIT
       railties (>= 4.0)
 
 GIT
-  remote: https://github.com/zurb/foundation.git
-  revision: a81d639847ba5fc2e324b749b8e409e31e8d83c9
+  remote: https://github.com/zurb/foundation-rails.git
+  revision: e077d749316bcb78525830e15a58c0c19e31a854
   specs:
-    zurb-foundation (4.3.1)
+    foundation-rails (5.0.2.0)
+      railties (>= 3.1.0)
       sass (>= 3.2.0)
 
 GEM
   remote: https://rubygems.org/
   specs:
-    actionmailer (4.0.0)
-      actionpack (= 4.0.0)
-      mail (~> 2.5.3)
-    actionpack (4.0.0)
-      activesupport (= 4.0.0)
+    actionmailer (4.0.2)
+      actionpack (= 4.0.2)
+      mail (~> 2.5.4)
+    actionpack (4.0.2)
+      activesupport (= 4.0.2)
       builder (~> 3.1.0)
       erubis (~> 2.7.0)
       rack (~> 1.5.2)
       rack-test (~> 0.6.2)
-    activemodel (4.0.0)
-      activesupport (= 4.0.0)
+    activemodel (4.0.2)
+      activesupport (= 4.0.2)
       builder (~> 3.1.0)
-    activerecord (4.0.0)
-      activemodel (= 4.0.0)
+    activerecord (4.0.2)
+      activemodel (= 4.0.2)
       activerecord-deprecated_finders (~> 1.0.2)
-      activesupport (= 4.0.0)
+      activesupport (= 4.0.2)
       arel (~> 4.0.0)
     activerecord-deprecated_finders (1.0.3)
-    activesupport (4.0.0)
+    activesupport (4.0.2)
       i18n (~> 0.6, >= 0.6.4)
       minitest (~> 4.2)
       multi_json (~> 1.3)
       thread_safe (~> 0.1)
       tzinfo (~> 0.3.37)
-    arel (4.0.0)
-    atomic (1.1.12)
-    bcrypt-ruby (3.1.1)
-    bson (1.9.1)
-    bson_ext (1.9.1)
-      bson (~> 1.9.1)
+    arel (4.0.1)
+    atomic (1.1.14)
+    bcrypt-ruby (3.1.2)
+    bson (2.0.0)
+    bson_ext (1.5.1)
     builder (3.1.4)
-    chunky_png (1.2.8)
-    coffee-rails (4.0.0)
+    chunky_png (1.2.9)
+    coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
-      railties (>= 4.0.0.beta, < 5.0)
+      railties (>= 4.0.0, < 5.0)
     coffee-script (2.2.0)
       coffee-script-source
       execjs
@@ -88,96 +88,100 @@ GEM
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
       sass (~> 3.1)
+    connection_pool (1.2.0)
     erubis (2.7.0)
-    execjs (1.4.0)
-      multi_json (~> 1.0)
-    foundation-icons-sass-rails (2.0.0)
+    execjs (2.0.2)
+    foundation-icons-sass-rails (3.0.0)
       railties (>= 3.1.1)
       sass-rails (>= 3.1.1)
     fssm (0.2.10)
     google-analytics-rails (0.0.4)
     hike (1.2.3)
-    i18n (0.6.4)
-    jbuilder (1.5.0)
+    i18n (0.6.9)
+    jbuilder (1.5.3)
       activesupport (>= 3.0.0)
       multi_json (>= 1.2.0)
     jquery-rails (3.0.4)
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
-    json (1.8.0)
+    json (1.8.1)
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
-    mime-types (1.23)
+    mime-types (1.25.1)
     minitest (4.7.5)
-    moped (1.5.0)
-    multi_json (1.7.8)
-    newrelic_rpm (3.6.6.147)
+    moped (2.0.0.beta4)
+      bson (~> 2.0)
+      connection_pool (~> 1.2)
+      optionable (~> 0.2.0)
+    multi_json (1.8.2)
+    newrelic_rpm (3.6.9.171)
+    optionable (0.2.0)
     origin (1.1.0)
-    orm_adapter (0.4.0)
+    orm_adapter (0.5.0)
     polyglot (0.3.3)
-    pony (1.5)
-      mail (> 2.0)
+    pony (1.6.1)
+      mail (>= 2.0)
     rack (1.5.2)
     rack-test (0.6.2)
       rack (>= 1.0)
-    rails (4.0.0)
-      actionmailer (= 4.0.0)
-      actionpack (= 4.0.0)
-      activerecord (= 4.0.0)
-      activesupport (= 4.0.0)
+    rails (4.0.2)
+      actionmailer (= 4.0.2)
+      actionpack (= 4.0.2)
+      activerecord (= 4.0.2)
+      activesupport (= 4.0.2)
       bundler (>= 1.3.0, < 2.0)
-      railties (= 4.0.0)
+      railties (= 4.0.2)
       sprockets-rails (~> 2.0.0)
     rails_12factor (0.0.2)
       rails_serve_static_assets
       rails_stdout_logging
     rails_serve_static_assets (0.0.1)
-    rails_stdout_logging (0.0.1)
-    railties (4.0.0)
-      actionpack (= 4.0.0)
-      activesupport (= 4.0.0)
+    rails_stdout_logging (0.0.3)
+    railties (4.0.2)
+      actionpack (= 4.0.2)
+      activesupport (= 4.0.2)
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
     rake (10.1.0)
     rdoc (3.12.2)
       json (~> 1.4)
     redcarpet (3.0.0)
-    sass (3.2.10)
-    sass-rails (4.0.0)
-      railties (>= 4.0.0.beta, < 5.0)
+    sass (3.2.12)
+    sass-rails (4.0.1)
+      railties (>= 4.0.0, < 5.0)
       sass (>= 3.1.10)
       sprockets-rails (~> 2.0.0)
     sdoc (0.3.20)
       json (>= 1.1.3)
       rdoc (~> 3.10)
-    sprockets (2.10.0)
+    sprockets (2.10.1)
       hike (~> 1.2)
       multi_json (~> 1.0)
       rack (~> 1.0)
       tilt (~> 1.1, != 1.3.0)
-    sprockets-rails (2.0.0)
+    sprockets-rails (2.0.1)
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (~> 2.8)
     thor (0.18.1)
-    thread_safe (0.1.2)
+    thread_safe (0.1.3)
       atomic
     tilt (1.4.1)
-    treetop (1.4.14)
+    treetop (1.4.15)
       polyglot
       polyglot (>= 0.3.1)
-    turbolinks (1.3.0)
+    turbolinks (1.3.1)
       coffee-rails
-    tzinfo (0.3.37)
-    uglifier (2.1.2)
+    tzinfo (0.3.38)
+    uglifier (2.3.2)
       execjs (>= 0.3.0)
-      multi_json (~> 1.0, >= 1.0.2)
+      json (>= 1.8.0)
     warden (1.2.3)
       rack (>= 1.0)
-    will_paginate (3.0.4)
-    will_paginate_mongoid (1.1.0)
-      mongoid (>= 2.4)
+    will_paginate (3.0.5)
+    will_paginate_mongoid (2.0.1)
+      mongoid
       will_paginate (~> 3.0)
 
 PLATFORMS
@@ -190,6 +194,7 @@ DEPENDENCIES
   devise!
   devise-encryptable!
   foundation-icons-sass-rails
+  foundation-rails!
   foundation_rails_helper!
   google-analytics-rails
   jbuilder (~> 1.2)
@@ -197,7 +202,7 @@ DEPENDENCIES
   mongoid!
   newrelic_rpm
   pony
-  rails (= 4.0.0)
+  rails (= 4.0.2)
   rails_12factor
   redcarpet
   sass-rails (~> 4.0.0)
@@ -205,4 +210,3 @@ DEPENDENCIES
   turbolinks
   uglifier (>= 1.3.0)
   will_paginate_mongoid
-  zurb-foundation!

@@ -81,4 +81,4 @@ production:
       uri: <%= ENV['MONGOHQ_URL'] %> 
       options:
         read: primary 
-        write: primary
+        {:w => true} 

@@ -3,21 +3,20 @@
 <% end %>
 
 <% @posts.each do |post| %>
-  <hr>
   <article class="post">
     <div class="row">
       <div class="small-10 small-centered columns">	
-	<h2 class=><%= post.title %></h2>
+	      <h2 class=><%= post.title %></h2>
       </div>
     </div>
     <div class="row">
       <div class="small-6 small-offset-6 columns">
-	<h4 class="subheader">Posted <%= time_ago_in_words(post.created_at) %> ago by <%= mail_to post.email, post.by, :subject => "Re: #{post.title}" %></h4>
+	      <h4 class="subheader">Posted <%= time_ago_in_words(post.created_at) %> ago by <%= mail_to post.email, post.by, :subject => "Re: #{post.title}" %></h4>
       </div>
     </div>
     <div class="row">
       <div class="small-10 small-centered columns">
-	<%= markdown(post.body).html_safe %>
+	      <%= markdown(post.body).html_safe %>
       </div>
     </div>
     <div class="row">
@@ -26,9 +25,9 @@
       </div>
     </div>
   </article>
+  <hr>
 <% end %>
 
-<hr>
 <%= will_paginate @posts %>
 
 
